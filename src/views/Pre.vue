@@ -1,5 +1,5 @@
 <template>
-  <v-container class="top">
+  <section class="top">
     <v-layout text-center wrap>
       <v-flex>
         <v-img :src="logo" width="210" class="img" />
@@ -12,7 +12,7 @@
       </v-flex>
       <depart />
     </v-layout>
-  </v-container>
+  </section>
 </template>
 
 <script>
@@ -33,7 +33,6 @@ export default {
 .top {
   background-color: #1976d2;
   color: white;
-  padding: 0;
 }
 .img {
   margin: 20px auto;

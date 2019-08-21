@@ -5,8 +5,6 @@ import Pre from './views/Pre.vue'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
-  base: process.env.BASE_URL,
   routes: [{
       path: '/pre',
       name: 'Pre',
