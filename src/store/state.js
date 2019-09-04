@@ -7,5 +7,5 @@ export default {
     name: window.localStorage.getItem("name") || "",
     uid: window.localStorage.getItem("uid") || "",
     depart: {},
-    show: false
+    dialog: false
 }

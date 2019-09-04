@@ -13,17 +13,17 @@ $bird = in_array("bird", $depart) ? "未面试" : 0;
 
 require 'conn.php';
 
-$sql = "SELECT COUNT(*) FROM `recruit` WHERE `uid`='$uid'";
+$sql = "SELECT COUNT(`uid`) FROM `recruit` WHERE `uid`='$uid'";
 $result = $conn->query($sql);
 if ($result) {
     $row = $result->fetch_assoc();
-    if ($row["COUNT(`*`)"] != 0) {
+    if ($row["COUNT(`uid`)"] == 0) {
         $sql = "INSERT INTO `recruit` (`name`, `uid`, `tel`, `qq`, `office`, `editor`, `media`, `echo`, `bird`)
                 VALUES ('$name', '$uid', '$tel', '$qq', '$office', '$editor', '$media', '$echo', '$bird')";
         $result = $conn->query($sql);
         if ($result) echo 1;
         else echo 0;
-    } else echo -1;
+    } else  echo -1;
 } else echo 0;
 
 $conn->close();

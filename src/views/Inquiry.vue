@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <field />
-    <status v-if="show" />
+    <status />
   </v-container>
 </template>
 
@@ -19,11 +19,5 @@ export default {
   computed: {
     ...mapState(["show", "name", "uid"])
   },
-  created() {
-    this.$store.dispatch("search", {
-      name: this.name,
-      uid: this.uid
-    });
-  }
 };
 </script>

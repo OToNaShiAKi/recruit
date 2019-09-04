@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Pre from './views/Pre.vue'
 import Inquiry from './views/Inquiry.vue'
 import Apply from './views/Apply.vue'
+import Game from './views/Game.vue'
+
 
 Vue.use(Router)
 
@@ -19,6 +21,10 @@ export default new Router({
     path: '/apply',
     name: 'Apply',
     component: Apply
+  }, {
+    path: '/game',
+    name: "Game",
+    component: Game
   }, {
     path: '/',
     redirect: '/apply'

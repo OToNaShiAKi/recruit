@@ -2,7 +2,7 @@ export default {
     already: (state, infor) => {
         for (let key in infor) {
             state[key] = infor[key];
-            window.localStorage.setItem(key, infor[key]);
+            window.localStorage.setItem(key, String(infor[key]));
         }
     },
     snack: (state, snack) => {
@@ -12,7 +12,10 @@ export default {
             state.snack[key] = snack[key];
     },
     inquiry: (state, inquiry) => {
-        state.show = true;
+        state.dialog = true;
         state.depart = inquiry;
+    },
+    dialog: (state, show) => {
+        state.dialog = show;
     }
 }

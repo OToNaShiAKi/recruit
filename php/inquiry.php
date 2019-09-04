@@ -16,11 +16,11 @@ if ($result) {
     else {
         $json['status'] = 1;
         $json['inquiry'] = array();
-        if ($row['office'] != "0")  $json['inquiry']['office'] = $row['office'];
-        if ($row['editor'] != "0")  $json['inquiry']['editor'] = $row['editor'];
-        if ($row['media'] != "0")  $json['inquiry']['media'] = $row['media'];
-        if ($row['echo'] != "0")  $json['inquiry']['echo'] = $row['echo'];
-        if ($row['bird'] != "0")  $json['inquiry']['bird'] = $row['bird'];
+        if ($row['office'] != "0")  $json['inquiry']['office'] = array('status' => $row['office']);
+        if ($row['editor'] != "0")  $json['inquiry']['editor'] =  array('status' => $row['editor']);
+        if ($row['media'] != "0")  $json['inquiry']['media'] =  array('status' => $row['media']);
+        if ($row['echo'] != "0")  $json['inquiry']['echo'] =  array('status' => $row['echo']);
+        if ($row['bird'] != "0")  $json['inquiry']['bird'] =  array('status' => $row['bird']);
     }
 }
 echo json_encode($json);

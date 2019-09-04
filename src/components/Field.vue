@@ -10,7 +10,7 @@
       prepend-inner-icon="U"
     />
     <v-btn @click="search" :disabled="error" class="mt-4" outlined block color="primary">查询报名状态</v-btn>
-    <to-link to="/apply" link="返回报名" />
+    <to-link :right="{to: '/pre', link: '部门招新群'}" :left="{to: '/apply', link: '返回报名'}" />
   </v-container>
 </template>
 
@@ -47,6 +47,7 @@ export default {
   created() {
     this.name.model = this.$store.state.name;
     this.uid.model = this.$store.state.uid;
+    if (!this.error) this.search;
   },
   methods: {
     search() {

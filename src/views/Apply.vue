@@ -28,7 +28,7 @@
       :counter="3"
     ></v-select>
     <v-btn @click="sub" :disabled="error" class="mt-4" outlined block color="primary">提交</v-btn>
-    <to-link to="/inquiry" link="查询报名状态" />
+    <to-link :right="{to: '/inquiry', link: '查询报名状态'}" :left="{to: '/game', link: '部门简介'}" />
   </v-container>
 </template>
 
