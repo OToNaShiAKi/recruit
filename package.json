@@ -11,7 +11,6 @@
     "axios": "^0.19.0",
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
-    "vue-localstorage": "^0.6.2",
     "vue-router": "^3.0.3",
     "vue-typed-js": "^0.1.2",
     "vuetify": "^2.0.0",

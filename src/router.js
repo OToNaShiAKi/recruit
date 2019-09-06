@@ -1,10 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Pre from './views/Pre.vue'
-import Inquiry from './views/Inquiry.vue'
-import Apply from './views/Apply.vue'
-import Game from './views/Game.vue'
-
+import Pre from './views/Pre'
+import Inquiry from './views/Inquiry'
+import Apply from './views/Apply'
+import Plus from './views/Plus'
 
 Vue.use(Router)
 
@@ -22,9 +21,9 @@ export default new Router({
     name: 'Apply',
     component: Apply
   }, {
-    path: '/game',
-    name: "Game",
-    component: Game
+    path: '/plus',
+    name: 'Plus',
+    component: Plus
   }, {
     path: '/',
     redirect: '/apply'

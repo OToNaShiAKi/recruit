@@ -1,8 +1,8 @@
 <template>
-  <v-content class="caption mt-2">
+  <section class="caption mt-2">
     <router-link :to="left.to">{{left.link}}</router-link>
     <router-link class="float-right" :to="right.to">{{right.link}}</router-link>
-  </v-content>
+  </section>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <section>
     <v-text-field v-model="name.model" :error-messages="name.text" label="姓名" />
     <v-text-field
       v-model="uid.model"
@@ -10,22 +10,16 @@
       prepend-inner-icon="U"
     />
     <v-btn @click="search" :disabled="error" class="mt-4" outlined block color="primary">查询报名状态</v-btn>
-    <to-link :right="{to: '/pre', link: '部门招新群'}" :left="{to: '/apply', link: '返回报名'}" />
-  </v-container>
+  </section>
 </template>
 
 <script>
-import ToLink from "@/components/ToLink";
-
 export default {
   name: "Field",
   data: () => ({
     name: { model: "", text: "" },
     uid: { model: "", text: "" }
   }),
-  components: {
-    ToLink
-  },
   watch: {
     "name.model"(n) {
       if (n.length) this.name.text = "";

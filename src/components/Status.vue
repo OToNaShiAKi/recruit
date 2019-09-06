@@ -2,14 +2,14 @@
   <v-dialog transition="scroll-y-transition" persistent v-model="dialog" max-width="300">
     <v-card>
       <v-card-title class="subtitle-1">欢迎报名科协</v-card-title>
-      <v-card-text v-for="(v, k) in depart" :key="k">
-        <v-content>{{k | depart}}：{{v.status}}</v-content>
-        <v-content>
-          面试时间：
-          <span v-if="v.time">{{v.time}}</span>
-          <span>部门尚未发布面试时间</span>
-        </v-content>
+      <v-card-text v-for="v in depart" :key="v.name">
+        <div>{{v.name | depart}}：{{v.status}}</div>
+        <div v-if="v.test">
+          <div v-for="(value, index) in v.test" :key="index">{{value.type}}：{{value.time}}</div>
+        </div>
+        <div v-else>部门尚未发布面试时间</div>
       </v-card-text>
+      <router-link v-if="depart.length < 3" class="caption ml-6" to="/plus">追加报名部门</router-link>
       <v-card-actions>
         <v-spacer />
         <v-btn color="primary" text @click="back">返回</v-btn>

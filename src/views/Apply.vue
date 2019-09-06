@@ -28,7 +28,7 @@
       :counter="3"
     ></v-select>
     <v-btn @click="sub" :disabled="error" class="mt-4" outlined block color="primary">提交</v-btn>
-    <to-link :right="{to: '/inquiry', link: '查询报名状态'}" :left="{to: '/game', link: '部门简介'}" />
+    <to-link :right="{to: '/inquiry', link: '查询报名状态'}" :left="{to: '/pre', link: '部门招新群'}" />
   </v-container>
 </template>
 
@@ -65,7 +65,7 @@ export default {
       else this.uid.text = "请输入正确学号";
     },
     "tel.model"(n) {
-      let tel = /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
+      let tel = /^[1](([3][0-9])|([4][5-9])|([5][0-3,5-9])|([6][5,6])|([7][0-8])|([8][0-9])|([9][1,8,9]))[0-9]{8}$/;
       if (tel.test(n)) this.tel.text = "";
       else this.tel.text = "请输入正确手机号";
     },
@@ -83,7 +83,7 @@ export default {
   computed: {
     error() {
       let uid = /^201[7-9]10[0|1][0-9][0-9]$/;
-      let tel = /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
+      let tel = /^[1](([3][0-9])|([4][5-9])|([5][0-3,5-9])|([6][5,6])|([7][0-8])|([8][0-9])|([9][1,8,9]))[0-9]{8}$/;
       let qq = /^[1-9][0-9]{4,}$/;
       let dis =
         this.name.model.length &&
