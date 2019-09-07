@@ -3,7 +3,8 @@ import Router from 'vue-router'
 import Pre from './views/Pre'
 import Inquiry from './views/Inquiry'
 import Apply from './views/Apply'
-import Plus from './views/Plus'
+import Minist from './views/Minist'
+import Test from './views/Test'
 
 Vue.use(Router)
 
@@ -21,9 +22,13 @@ export default new Router({
     name: 'Apply',
     component: Apply
   }, {
-    path: '/plus',
-    name: 'Plus',
-    component: Plus
+    path: '/test',
+    name: 'Test',
+    component: Test
+  }, {
+    path: '/minist',
+    name: 'Minist',
+    component: Minist
   }, {
     path: '/',
     redirect: '/apply'

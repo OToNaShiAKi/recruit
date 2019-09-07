@@ -7,6 +7,7 @@ export default {
     }, sub) => {
         axios.post("/php/sub.php", qs.stringify(sub)).then(res => {
             if (res.data == 1) {
+                commit("depart", sub.depart);
                 commit("already", {
                     name: sub.name,
                     uid: sub.uid
@@ -66,5 +67,41 @@ export default {
                 text: "提交失败，请确认网络后重新提交！"
             });
         });
+    },
+    plus: ({
+        commit
+    }, plus) => {
+        axios.post("/php/plus.php", qs.stringify(plus)).then(res => {
+            if (res.data == 1) {
+                commit("depart", plus.plus);
+                commit("snack", {
+                    color: "success",
+                    text: "追加报名成功，前往查询！",
+                    to: "/inquiry"
+                });
+            } else throw res;
+        }).catch(err => {
+            window.console.log(err);
+            commit("snack", {
+                color: "error",
+                text: "提交失败，请确认网络后重新提交！"
+            });
+        });
+    },
+    members: ({
+        commit
+    }) => {
+        let desserts = axios.get("/php/members.php").then(res => {
+            if (res.data.status)
+                return res.data.desserts;
+            else throw res;
+        }).catch(err => {
+            window.console.log(err);
+            commit("snack", {
+                color: "error",
+                text: "获取，请确认网络后重新提交！"
+            });
+        });
+        return desserts;
     }
 }

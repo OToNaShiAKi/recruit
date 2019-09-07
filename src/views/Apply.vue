@@ -26,7 +26,8 @@
       multiple
       chips
       :counter="3"
-    ></v-select>
+      hint="最多填报三个部门"
+    />
     <v-btn @click="sub" :disabled="error" class="mt-4" outlined block color="primary">提交</v-btn>
     <to-link :right="{to: '/inquiry', link: '查询报名状态'}" :left="{to: '/pre', link: '部门招新群'}" />
   </v-container>
