@@ -17,12 +17,5 @@ export default {
     },
     dialog: (state, show) => {
         state.dialog = show;
-    },
-    depart: (state, depart) => {
-        depart = depart.map(v => ({
-            name: v,
-            status: "未面试"
-        }));
-        state.depart.push(...depart);
     }
 }

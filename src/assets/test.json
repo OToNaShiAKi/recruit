@@ -1,100 +1,88 @@
 {
   "picture": [
     {
-      "type": "产品主图——无限耳机",
-      "src": "http://118.31.58.18/recruit/img/airpods.jpg"
-    },
-    {
-      "type": "商店首页——母婴童装",
-      "src": "http://118.31.58.18/recruit/img/baby.jpg"
+      "type": "产品主图——无线耳机",
+      "src": "./img/airpods.jpg"
     },
     {
       "type": "字体设计——归来",
-      "src": "http://118.31.58.18/recruit/img/back.jpg"
+      "src": "./img/back.jpg"
     },
     {
-      "type": "产品Banner——电脑",
-      "src": "http://118.31.58.18/recruit/img/computer.jpg"
+      "type": "PC端全屏网页——劳弗尔",
+      "src": "./img/intro.jpg"
     },
     {
       "type": "APP节日启动页——饭团",
-      "src": "http://118.31.58.18/recruit/img/fantuan.jpg"
+      "src": "./img/fantuan.jpg"
     },
     {
       "type": "APP启动页——文缘",
-      "src": "http://118.31.58.18/recruit/img/fate.jpg"
+      "src": "./img/fate.jpg"
     },
     {
       "type": "商店节日促销首页——零食",
-      "src": "http://118.31.58.18/recruit/img/food.jpg"
+      "src": "./img/food.jpg"
     },
     {
       "type": "产品Banner——女装",
-      "src": "http://118.31.58.18/recruit/img/girl1.jpg"
-    },
-    {
-      "type": "产品Banner——女装",
-      "src": "http://118.31.58.18/recruit/img/girl2.jpg"
+      "src": "./img/girl.jpg"
     },
     {
       "type": "APP首页——唯家家具",
-      "src": "http://118.31.58.18/recruit/img/home.jpg"
+      "src": "./img/home.jpg"
     },
     {
-      "type": "产品主图—打印机",
-      "src": "http://118.31.58.18/recruit/img/ink.jpg"
+      "type": "产品主图——打印机",
+      "src": "./img/ink.jpg"
     },
     {
       "type": "宣传海报——科协迎新",
-      "src": "http://118.31.58.18/recruit/img/recruit.jpg"
+      "src": "./img/recruit.jpg"
     },
     {
       "type": "产品海报——抹茶",
-      "src": "http://118.31.58.18/recruit/img/macya.jpg"
+      "src": "./img/macya.jpg"
     },
     {
       "type": "产品包装盒——牛奶",
-      "src": "http://118.31.58.18/recruit/img/milk.jpg"
+      "src": "./img/milk.jpg"
     },
     {
       "type": "产品Banner——口红",
-      "src": "http://118.31.58.18/recruit/img/mouse.jpg"
+      "src": "./img/mouse.jpg"
     },
     {
       "type": "产品Banner——手机",
-      "src": "http://118.31.58.18/recruit/img/phone.jpg"
+      "src": "./img/phone.jpg"
     },
     {
       "type": "产品详情页——女装",
-      "src": "http://118.31.58.18/recruit/img/rabbit.jpg"
+      "src": "./img/rabbit.jpg"
     },
     {
       "type": "公益海报——读书",
-      "src": "http://118.31.58.18/recruit/img/read.jpg"
+      "src": "./img/read.jpg"
     },
     {
       "type": "字体设计——不由自主",
-      "src": "http://118.31.58.18/recruit/img/self.jpg"
-    },
-    {
-      "type": "网页展板——女装店铺",
-      "src": "http://118.31.58.18/recruit/img/show.jpg"
+      "src": "./img/self.jpg"
     },
     {
       "type": "字体设计——暗香",
-      "src": "http://118.31.58.18/recruit/img/smell.jpg"
+      "src": "./img/smell.jpg"
     },
     {
-      "type": "商店首页——家具",
-      "src": "http://118.31.58.18/recruit/img/tables.jpg"
+      "type": "产品详情页——家具",
+      "src": "./img/tables.jpg"
     },
     {
       "type": "字体设计——时光谣",
-      "src": "http://118.31.58.18/recruit/img/time.jpg"
+      "src": "./img/time.jpg"
     },
     {
       "type": "商店首页——女装",
-      "src": "http://118.31.58.18/recruit/img/usual.jpg"
+      "src": "./img/usual.jpg"
     }
   ]
 }
